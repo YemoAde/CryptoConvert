@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bgt"
+        />
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_currency_background_color"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/header_label"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            tools:text="Currency Converter"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/alc"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            tools:text="Currency Converter"
+            />
+    </LinearLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:scrollbars="none"
+        tools:context="com.example.android.currencyconverter.MainActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/card_view"-->
+            <!--android:scrollbars="none"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <GridView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="10dp"
+                android:scrollbars="none">
+            </GridView>
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:text="Add a Card !"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                tools:text="Add a Card !"/>
+
+        </FrameLayout>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="70dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/delete_icon"
+                android:visibility="invisible"
+                app:backgroundTint="@android:color/holo_red_dark"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp" />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="140dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/add_card"
+                android:visibility="invisible"
+                app:backgroundTint="@color/upper_half"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp" />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="210dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/refresh_icon"
+                android:visibility="invisible"
+                app:backgroundTint="@android:color/holo_blue_dark"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp" />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="8dp"
+                android:src="@drawable/add_icon"
+                app:backgroundTint="@color/colorAccent"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp" />
+        </android.support.design.widget.CoordinatorLayout>
+    </FrameLayout>
+</RelativeLayout>
+
+

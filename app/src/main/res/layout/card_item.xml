@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/base_currency_background_color"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/base_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="8dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:text="Bitcoins"
+        />
+
+    <TextView
+        android:id="@+id/exchange_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/base_currency"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="8dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16sp"
+        tools:text="2000"/>
+
+    <TextView
+        android:id="@+id/local_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exchange_rate"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="8dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:text="Bitcoins"/>
+
+
+
+
+</RelativeLayout>

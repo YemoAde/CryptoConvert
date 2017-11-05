@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">CryptoConvert</string>
+    <string name="spinner_title">Drop Down</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="try_again">Could Not Refresh Exchange List</string>
+    <string name="bitcoin">BTC</string>
+    <string name="ether">ETH</string>
+    <string name="header_label">Crypto - Convert</string>
+    <string name="alc">Android Learning Community</string>
+
+    <string-array name="local_currency_list">
+        <item>NGN</item>
+        <item>USD</item>
+        <item>GBP</item>
+        <item>EUR</item>
+        <item>ZAR</item>
+        <item>AED</item>
+        <item>RUB</item>
+        <item>CNY</item>
+        <item>JPY</item>
+        <item>CFP</item>
+        <item>CHF</item>
+        <item>GHS</item>
+        <item>AUD</item>
+        <item>ARS</item>
+        <item>BRL</item>
+        <item>INR</item>
+        <item>CAD</item>
+        <item>BND</item>
+        <item>DKK</item>
+        <item>SAR</item>
+        <item>SGD</item>
+    </string-array>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#143120</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_material_light">#eee7e8ea</color>
+    <!--<color name="background_material_light">#ee0c0d18</color>-->
+    <color name="base_currency_background_color">#91143120</color>
+    <color name="conversion_background_color">#56554f</color>
+    <color name="upper_half">#276c56</color>
+    <color name="lower_half">#dcdcdc</color>
+</resources>
